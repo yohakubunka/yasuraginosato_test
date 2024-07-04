@@ -1,0 +1,464 @@
+
+/* --------------------------------------------------------------
+# 案件担当者以外が使用できるファイルです。
+# 使用ルール
+使用する際は、クラスに『deve〇〇』と名前を書き、セレクタの指定は
+and指定で記述し、メインのコーディングデータとコンフリクトするのを
+避けてください。
+# 記述例
+-html
+<div class="box deveShimizu">
+<p>exsample</p>
+</div>
+
+-scss
+.box.deveShimizu {
+margin: 0;
+p {
+font-size: 18px;
+}
+}
+
+# ファイル内の記述内容を案件担当者が読んでもわかるように、コメント
+を残してください。参考にしたURLなどがあればコメントに書きましょう。
+# 日付の入力をすること。コーディングが終わってからでもいいので追加、
+編集などした場合は日付を書いてください。
+-----------------------------------------------------------------*/
+
+// 鈴木　追加　9月24日 ---------------------------------------------
+
+$editColor01 : #ffe4f9;
+$editColor02 : #30b5ef;
+section.main-wrap {
+  section.hatooka.devesuzuki {
+    flex-basis: 840px;
+    max-width: 840px;
+    .main-wrap {
+      .mv {//メインビジュアル（？）の四角形
+        width: 100%;
+        background-color: $editColor01;
+        text-align: center;
+        padding:130px 0;
+        @media only screen and (max-width: 767px){
+          padding: 80px;
+        }
+        .name {//(仮称)のスタイル指定
+          font-size: 30.6px;
+          color: $editColor02;
+          font-weight: 600;
+          @media only screen and (max-width: 767px){
+            font-size: 25px;
+          }
+        }
+        .subname{//開設予定　のスタイル指定
+          font-size: 25px;
+          @media only screen and (max-width: 767px){
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+  .list.oasis-ht {
+    dt {
+      background-color: #e1d7c6;
+    }
+  }
+}
+
+// /鈴木　追加　9月24日 ---------------------------------------------
+
+// 近藤　追加　9月24日 ---------------------------------------------
+section.hatooka.devekondo{  //施設概要のスタイル指定
+  .main-wrap{
+    .info{
+      .list{
+        display: flex;
+        img{
+          margin: 0;
+        }
+        .txt{
+          flex-basis: 659px;
+          max-width: 659px;
+        }
+        p{
+          margin-left: 5px;
+          padding: 30px 0 30px 30px;
+          border-bottom: 1px solid #e8e5e5;
+        }
+        .name{
+          border-top: 1px solid #e8e5e5;
+        }
+      }
+    }
+  }
+}
+
+div.oplink.devekondo{  //スタッフリンクのスタイル指定
+  margin-top: 70px;
+  @media only screen and (max-width: 767px){
+    margin-top: 35px;
+  }
+  a{
+    width: 100%;
+    font-family: UtsukushiMincho,ten-mincho,serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 50px 15px;
+    color: #565656;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.916363636363636em;
+    border: #c4af8d 5px solid;
+  }
+}
+
+@media screen and (max-width: 320px) {  //レスポンシブ
+  section.hatooka.devekondo{  //施設概要のスタイル指定
+    .main-wrap{
+      .info{
+        .list{
+          display:block;
+          img{
+
+            margin-bottom: 30px;
+          }
+          p{
+            margin-left: 0;
+            padding: 32px 0;
+          }
+        }
+      }
+    }
+  }
+  div.oplink.devekondo{  //スタッフリンクのスタイル指定
+    a{
+      font-size: 17px;
+    }
+  }
+}
+
+// 近藤　追加　9月24日 ---------------------------------------------
+
+
+// 清水　追加　9月25日 ---------------------------------------------
+iframe.youtube.deveShimizu {  // iframeの余白とサイズ調整
+  margin-top: 30px;
+  @media screen and (max-width: 1200px) {
+    height: 365px;
+  }
+  @media screen and (max-width: 767px) {
+    height: 315px;
+  }
+  @media screen and (max-width: 425px) {
+    height: 265px;
+  }
+}
+article.nursary-map {
+  position: relative;
+}
+.popup-overlay.deveShimizu{
+  /*Hides pop-up when there is no "active" class*/
+  visibility:hidden;
+  position:absolute;
+  background:#ffffff;
+  border:1px solid #707070;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  padding: 30px 15px;
+  @media screen and (max-width: 425px) {
+    padding: 20px 7.5px;
+  }
+  p {
+    text-align: center;
+    img {
+      max-width: 450px;
+      min-width: 295px;
+    }
+  }
+}
+.popup-overlay.deveShimizu.active{
+  /*displays pop-up when "active" class is present*/
+  visibility:visible;
+  text-align:center;
+}
+
+.popup-content {
+  /*Hides pop-up content when there is no "active" class */
+  visibility:hidden;
+}
+
+.popup-content.active {
+  /*Shows pop-up content when "active" class is present */
+  visibility:visible;
+}
+.open-wrap.deveShimizu {
+  width: 100%;
+  text-align: center;
+}
+button.deveShimizu{
+  margin: auto;
+  margin-top: 20px;
+  display:inline-block;
+  vertical-align:middle;
+  border-radius:5px;
+  font-size: 13px;
+  color:#a7668a;
+  background:	#f6d9ec;
+  border:2px solid #a7668a;
+  padding: 10px 40px;
+  &.close {
+    padding: 0px 30px;
+  }
+}
+
+// 予約ボタン(オアシスあじま保育園のみ表示)
+// .reserved-icon.deveShimizu {  // 予約ボタンwrap
+//   position: fixed;
+//   bottom: 60px;
+//   right: 5vw;
+//   border-radius: 50%;
+//   background-color: #f6d9ec;
+//   border: 2px solid #a7668a;
+//   width: 150px;
+//   height: 150px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 999;
+//   transition: 0.45s;
+//   @media screen and (max-width: 767px) {
+//     width: 120px;
+//     height: 120px;
+//     bottom: 40px;
+//   }
+//   @media screen and (max-width: 420px) {
+//      width: 100px;
+//      height: 100px;
+//   }
+//   p {  // ボタンのアイコンとテキスト
+//     color: #a7668a;
+//     text-align: center;
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap;
+//     img {
+//       max-width: 98px;
+//     }
+//     @media screen and (max-width: 420px) {
+//       img {
+//         max-width: 50px;
+//       }
+//     }
+//     span {
+//       display: block;
+//       text-align: center;
+//       width: 100%;
+//       color: #a7668a;
+//       font-size: 13px;
+//       @media screen and (max-width: 767px) {
+//         font-size: 12px;
+//       }
+//       @media screen and (max-width: 420px) {
+//         //font-size: 10px;
+//       }
+//     }
+//   }
+// }
+// 清水　追加　9月25日 ---------------------------------------------
+.reserved-icon { 
+  position: fixed;
+  bottom: 60px;
+  right: 5vw;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 0.45s;
+  @media screen and (max-width: 767px) {
+    width: 120px;
+    height: 120px;
+    bottom: 40px;
+  }
+  @media screen and (max-width: 420px) {
+     width: 100px;
+     height: 100px;
+  }
+  p {  // ボタンのアイコンとテキスト
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      max-width: 98px;
+    }
+    @media screen and (max-width: 420px) {
+      img {
+        max-width: 50px;
+      }
+    }
+    span {
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-size: 13px;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 420px) {
+        //font-size: 10px;
+      }
+    }
+  }
+}
+.ajima {
+  background-color: #f6d9ec;
+  border: 2px solid #a7668a;
+  p {
+    color: #a7668a;
+    span {
+      color: #a7668a;
+    }
+  }
+}
+.kodomoen {
+  background-color: #d6eee7;
+  border: 2px solid #7bbaa7;
+  p {
+    color: #7bbaa7;
+    span {
+      color: #7bbaa7;
+    }
+  }
+}
+.hatooka {
+  background-color: #e1d7c6;
+  border: 2px solid #7e663d;
+  p {
+    color: #7e663d;
+    span {
+      color: #7e663d;
+    }
+  }
+}
+.yasuragi,.oasis-k,.oasis-y {
+  background-color: #ddf1fd;
+  border: 2px solid #75c1ed;
+  p {
+    color: #72b9e2;
+    span {
+      color: #72b9e2;
+    }
+  }
+}
+.reserved-icon.hatooka {  // 予約ボタンwrap
+  position: fixed;
+  bottom: 60px;
+  right: 5vw;
+  border-radius: 50%;
+  background-color: #e1d7c6;
+  border: 2px solid #7e663d;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 0.45s;
+  @media screen and (max-width: 767px) {
+    width: 120px;
+    height: 120px;
+    bottom: 40px;
+  }
+  @media screen and (max-width: 420px) {
+     width: 100px;
+     height: 100px;
+  }
+  p {  // ボタンのアイコンとテキスト
+    color: #7e663d;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      max-width: 98px;
+    }
+    @media screen and (max-width: 420px) {
+      img {
+        max-width: 50px;
+      }
+    }
+    span {
+      display: block;
+      text-align: center;
+      width: 100%;
+      color: #7e663d;
+      font-size: 13px;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 420px) {
+        //font-size: 10px;
+      }
+    }
+  }
+}
+// 2022年9月29日　古田修正
+.reserved-icon.yasuragi,.oasis-k,.oasis-y {
+  position: fixed;
+  bottom: 60px;
+  right: 5vw;
+  border-radius: 50%;
+  background-color: #ddf1fd;
+  border: 2px solid #75c1ed;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  transition: 0.45s;
+  @media screen and (max-width: 767px) {
+    width: 120px;
+    height: 120px;
+    bottom: 40px;
+  }
+  @media screen and (max-width: 420px) {
+     width: 100px;
+     height: 100px;
+  }
+  p {  // ボタンのアイコンとテキスト
+    color: #72b9e2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      max-width: 98px;
+    }
+    @media screen and (max-width: 420px) {
+      img {
+        max-width: 50px;
+      }
+    }
+    span {
+      display: block;
+      text-align: center;
+      width: 100%;
+      color: #72b9e2;
+      font-size: 13px;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+      }
+      @media screen and (max-width: 420px) {
+        //font-size: 10px;
+      }
+    }
+  }
+}

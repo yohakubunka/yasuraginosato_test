@@ -1,0 +1,25 @@
+section.privacy{
+  h3{
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #969696;
+    @include margin2(0,30px);
+    img{
+      margin:0 auto 0 0;
+    }
+  }
+  ul{
+    @include margin2(30px,30px);
+    list-style-type:disc;
+    padding-left: 30px;
+    li{
+      margin-bottom: 15px;
+      line-height: 1.8em;
+    }
+    li:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  .name{
+    text-align: right;
+  }
+}

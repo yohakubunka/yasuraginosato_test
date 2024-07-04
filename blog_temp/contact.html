@@ -1,0 +1,108 @@
+<ul>
+  <li>
+    <p class="left">お問い合わせ番号<span>(必須)</span></p>
+    <p class="right">[text c-number]</p>
+  </li>
+  <li>
+    <p class="left">お問い合わせ項目<span>(必須)</span></p>
+    <p class="right">[checkbox* c-koumoku use_label_element "求人応募" "お問い合わせ"]</p>
+  </li>
+  <li>
+    <p class="left">お名前<span>(必須)</span></p>
+    <p class="right">[text* y-name]</p>
+  </li>
+  <li>
+    <p class="left">フリガナ<span>(必須)</span></p>
+    <p class="right">[text* f-name]</p>
+  </li>
+  <li>
+    <p class="left">性別</p>
+    <p class="right">[radio c-sex default:1 "男性" "女性"]</p>
+  </li>
+  <li>
+    <p class="left">メール<span>(必須)</span></p>
+    <p class="right">[email* your-email]</p>
+  </li>
+  <li>
+    <p class="left">メール（確認）<span>(必須)</span></p>
+    <p class="right">[email* your-email_confirm]</p>
+  </li>
+  <li>
+    <p class="left">お電話番号</p>
+    <p class="right">[text y-tell]</p>
+  </li>
+  <li>
+    <p class="left">住所</p>
+    <p class="right">[text y-address]</p>
+  </li>
+  <li>
+    <p class="left">メッセージ<span>(必須)</span></p>
+    <p class="right">[textarea* c-textarea]</p>
+  </li>
+</ul>
+<div class="privacy">
+  <h3>プライバシーポリシー</h3>
+  <p class="text">社会福祉法人やすらぎの郷は、以下の方針に基づき、個人情報の保護に努めます。</p>
+  <ul>
+    <li>当法人は、個人の人格尊重の理念のもとに、関係法令等を遵守し、実施するあらゆる事業において、個人情報を慎重に取り扱います。</li>
+    <li>当法人は、個人情報を適法かつ適正な方法で取得します。取得する個人情報は、「個人情報保有目録」に掲載のとおりです。</li>
+    <li>当法人は個人情報の利用目的をできる限り特定するとともに、その利用目的の範囲でのみ個人情報を利用します。</li>
+    <li>当法人はあらかじめ明示した範囲及び法令等の規程に基づく場合を除いて、個人情報を事前に本人の同意を得ることなく外部に提供しません。</li>
+    <li>当法人はあらかじめ明示した範囲及び法令等の規程に基づく場合を除いて、個人情報を事前に本人の同意を得ることなく外部に提供しません。</li>
+    <li>当法人は、本人が自己の個人情報について、開示・訂正・追加・削除・利用停止を求める権利を有していることを確認し、これらの申出があった場合には速やかに対応します。</li>
+    <li>当法人は、個人情報の取扱いに関する苦情があった時は、適切かつ速やかに対応します。</li>
+    <li>当法人は、個人情報を保護するために適切な管理体制を講じるとともに、役職員の個人情報保護に関する意識啓発に努めます。</li>
+    <li>当法人は、この方針を実行するため、個人情報保護規程を定め、これを当法人役職員に周知徹底し、確実に実施します。</li>
+  </ul>
+  <p class="text name">
+    平成２４年４月１日<br>
+    社会福祉法人やすらぎの郷<br>
+    理事長　　福田　哲治
+  </p>
+</div>
+<div class="check">
+  <p>[acceptance check-box]利用規約に同意する</p>
+</div>
+<div class="send">
+  <p class="send-button">[confirm "入力内容を確認する"][submit "上記の内容で送信する"][back "戻って編集する"]</p>
+  <p class="tyui">※メールの場合ご返答までにお時間をいただくことがございます。</p>
+</div>
+
+
+<!--
+  個別ページhtml部分
+-->
+
+<div class="flex">
+  <div class="left">
+    <h4>Kids View</h4>
+    <p class="text">
+      お子様の成長を支える支援ソフトを導入しております。園の全体的な計画や各クラスの指導計画を電子化し、お子様一人ひとりの成長を園全体で共有します。お子様の入園時から就学時までを切れ目なく支えてまいります。また、保育者による記録作成を電子化することで作成時間の短縮化を図り、保育者が日々の活動やお子様と共に過ごす時間をより充実したものにすることができるようにしています。お子様の登降園時刻の管理にも活用しています。
+    </p>
+  </div>
+  <div class="right">
+    <p class="img"><img src="http://yohakubunka.xsrv.jp/test/yas/wp-content/uploads/kidsview.png" alt=""></p>
+  </div>
+</div>
+<div class="flex">
+  <div class="left">
+    <h4>きっずノート</h4>
+    <p class="text">
+      ご家庭と園がお子様の子育てを連携して行っていくための連絡ノートを電子化。スマートフォンからご家庭でのお子様の様子、連絡事項を入力していただけたり、通勤時間中や勤務先からでも連絡ノートが確認できます。また、ご家族でIDを共有していただくことで、お子様の園での様子を離れた地域にお住いのご家族にもご覧いただくことができます。お子様の園での活動の記録をご家庭と共有しつつ、園からの一斉連絡も配信しております。
+    </p>
+  </div>
+  <div class="right">
+    <p class="img"><img src="http://yohakubunka.xsrv.jp/test/yas/wp-content/uploads/kidsnote.png" alt=""></p>
+  </div>
+</div>
+<div class="flex">
+  <div class="left">
+    <h4>Instagram</h4>
+    <p class="text">
+      園の舞台裏の様子や生活の中でのお子様の何気ない一場面を切り取った画像をInstagramで配信しています。またお子様だけでなく、保護者の方にはなかなか見ていただくことの無い職員（園長・保育者・栄養士）たちのお仕事の様子やトピックス、行事の準備の様子など、その場の雰囲気が感じられる画像を使用して積極的に情報発信をしております。在園児の保護者様、園関係者の方限定で配信しております。
+    </p>
+  </div>
+  <div class="right">
+    <p class="img"><img src="http://yohakubunka.xsrv.jp/test/yas/wp-content/uploads/instagram.png" alt=""></p>
+  </div>
+</div>

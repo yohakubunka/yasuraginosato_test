@@ -1,0 +1,25 @@
+.site{
+  .cont01{
+    padding:0 15px;
+    .list{
+      @include flex(flex-start,stretch,start,stretch);
+      border-top: 1px solid #c1c0c0;
+      p{
+        padding:25px;
+      }
+    }
+    .list:last-of-type{
+      border-bottom: 1px solid #c1c0c0;
+    }
+    .left{
+      background: #e3e3e3;
+      @include basis(200px,200px,100%,0,0);
+    }
+    .right{
+      @include basis(742px,508px,100%,0,0);
+      a{
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,176 @@
+section.archive-recruit{
+  h3{
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #969696;
+    @include margin2(0,30px);
+    img{
+      margin:0 auto 0 0;
+    }
+  }
+  article.cont01{
+    h4{
+      @include margin2(50px,30px);
+    }
+    p.text{
+      text-align: center;
+      @include margin2(0,30px);
+    }
+  }
+  article.searchbox{
+    @include margin2(70px,0);
+    div.searchbox-inner{
+      border: 5px solid #f9c5e8;
+      padding:30px;
+      > h4{
+        padding:5px 0 10px;
+      }
+      h4::before{
+        font-family: FontAwesome;
+        margin-right: 5px;
+      }
+      h4:nth-of-type(1)::before{content:"\f002";}
+      .searchandfilter > ul li:nth-of-type(1) h4::before{content:"\f040";}
+      .searchandfilter > ul li:nth-of-type(2) h4::before{content:"\f2d2";}
+      .searchandfilter > ul li:nth-of-type(3) h4::before{content:"\f041";}
+    }
+    li > ul{
+      @include flex(flex-start,flex-start,start,start);
+      li{
+        @include basis(50%,50%,100%,0,0);
+        padding:3px 10px;
+        label{
+          @media only screen and (max-width: 767px){
+            display: inline;
+          }
+        }
+      }
+    }
+  }
+  article.recruit-list{
+    @include margin2(40px,0);
+    > p.text{
+      padding:30px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    div.single{
+      border: 2px solid #ececec;
+      margin-bottom: 15px;
+      a{
+        display: block;
+        background: #ececec;
+        max-width: 480px;
+        padding:10px;
+        margin:30px auto 0;
+        font-size: 1.8rem;
+        text-align: center;
+        border: 1px solid rgba(0,0,0,.3);
+      }
+    }
+    h3{
+      padding:10px;
+      border-bottom: none;
+      @include margin2(0,0);
+      background: #ececec;
+      cursor: pointer;
+      img{
+        margin:0 auto 0 0;
+      }
+    }
+    div.inner{
+      padding:0 30px 30px;
+      display: none;
+      dl{
+        @include flex(space-between,stretch,justify,stretch);
+        border-bottom: 1px solid #e8e5e5;
+        > *{
+          padding:30px;
+        }
+        dt{
+          @include basis(180px,180px,100%,0,0);
+          @include flex(flex-start,center,start,center);
+        }
+        dd{
+          @include basis(566px,464px,100%,0,0);
+        }
+      }
+    }
+    div.inner-in{
+      display: block;
+    }
+  }
+  article.walk{
+    @include margin2(70px,0);
+    div.list{
+      dl{
+        @include flex(space-between,stretch,justify,stretch);
+        > *{
+          padding:30px;
+        }
+        dt{
+          @include basis(180px,180px,100%,0,0);
+          @include flex(flex-start,center,start,center);
+          background: #ddf1fd;
+          border-bottom: 1px solid #fff;
+        }
+        dd{
+          @include basis(659px,557px,100%,0,0);
+          border-bottom: 1px solid #e8e5e5;
+        }
+      }
+      dl:last-of-type dt{
+        border-bottom: none;
+      }
+      dl:first-of-type dd{
+        border-top: 1px solid #e8e5e5;
+        @media only screen and (max-width: 767px){
+          border-top: none;
+        }
+      }
+    }
+  }
+  article.info{
+    @include margin2(70px,0);
+    div.list{
+      dl{
+        @include flex(space-between,stretch,justify,stretch);
+        > *{
+          padding:30px;
+        }
+        dt{
+          @include basis(180px,180px,100%,0,0);
+          @include flex(flex-start,center,start,center);
+          background: #ddf1fd;
+          border-bottom: 1px solid #fff;
+        }
+        dd{
+          @include basis(659px,557px,100%,0,0);
+          border-bottom: 1px solid #e8e5e5;
+          ul{
+            list-style-type:disc;
+            padding-left: 22px;
+          }
+          a{
+            text-decoration: underline;
+            color: #70a1bf;
+          }
+        }
+      }
+      dl:last-of-type dt{
+        border-bottom: none;
+      }
+      dl:first-of-type dd{
+        border-top: 1px solid #e8e5e5;
+        @media only screen and (max-width: 767px){
+          border-top: none;
+        }
+      }
+    }
+  }
+  article.map{
+    @include margin2(70px,0);
+    p.text{
+      @include margin2(0,30px);
+    }
+  }
+}

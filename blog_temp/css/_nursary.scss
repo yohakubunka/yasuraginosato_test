@@ -1,0 +1,250 @@
+section.nursary{
+  h3{
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #969696;
+    @include margin2(0,30px);
+    img{
+      margin:0 auto 0 0;
+    }
+  }
+  article.main-img{
+    margin-bottom: 10px;
+    padding:5px;
+  }
+  article.thumbs{
+    @include flex(space-between,center,justify,center);
+    p{
+      @include basis(33.3333%,33.3333%,33.3333%,0,0);
+      padding:5px;
+      opacity: .6;
+      transition: ease all .3s;
+    }
+    p:hover{
+      opacity: 1;
+    }
+  }
+  article.concept{
+    @include margin2(70px,70px);
+    .text{
+      text-align: center;
+      font-size: 1.6rem;
+      padding:30px;
+    }
+    p.oasis-kids{border:5px solid #d6eee7;}
+    p.oasis-aj{border:5px solid #f6d9ec;}
+    p.oasis-nn{border:5px solid #ffeaca;}
+    p.oasis-in{border:5px solid #ddf1fd;}
+  }
+  nav.inner-nav{
+    @include flex(space-between,center,justify,center);
+    @include margin2(0,80px);
+    > a{
+      @include basis(24.5%,24.5%,49%,10px,10px);
+      text-align: center;
+      margin-top: 10px;
+      font-size: 1.3rem;
+      padding:7px 5px 5px;
+      border: 2px solid #d0e7f0;
+      background: #fff;
+      transition:  ease .2s all;
+    }
+    a.dammy{
+      border: none;
+    }
+    > a:hover{
+      background: #fbfbfb;
+    }
+    a.dammy:hover{
+      background: #fff;
+    }
+  }
+  article.info{
+    @include margin2(70px,0);
+    div.list{
+      dl{
+        @include flex(space-between,stretch,justify,stretch);
+        > *{
+          padding:30px;
+        }
+        dt{
+          @include basis(180px,180px,100%,0,0);
+          @include flex(flex-start,center,start,center);
+          border-bottom: 1px solid #fff;
+        }
+        .servicesn{
+          br{
+            @media only screen and(max-width: 767px) {
+              display: none;
+            }
+          }
+        }
+        dd{
+          @include basis(659px,557px,100%,0,0);
+          @include flex(0,center);
+          border-bottom: 1px solid #e8e5e5;
+          .pdf-file{
+            text-decoration: underline
+            // &::after{
+            //   content: "";
+            //   background-image: url(../images/common/icon-pdf.svg);
+            //   background-repeat: no-repeat;
+            //   width: 100%;
+            //   max-width: 28px;
+            //   height: 24px;
+            //   margin-left: 8px;
+            //   display: inline-block;
+            //   vertical-align: sub;
+            // }
+          }
+        }
+      }
+      dl:last-of-type dt{
+        border-bottom: none;
+      }
+      dl:first-of-type dd{
+        border-top: 1px solid #e8e5e5;
+        @media only screen and (max-width: 767px){
+          border-top: none;
+        }
+      }
+    }
+    div.oasis-kids dl dt{background: #d6eee7;}
+    div.oasis-aj dl dt{background: #f6d9ec;}
+    div.oasis-nn dl dt{background: #ffeaca;}
+    div.oasis-in dl dt{background: #ddf1fd;}
+  }
+  article.news{
+    @include margin2(70px,0);
+    h3{
+      @include margin2(0,0);
+    }
+    div.list{
+      li{
+        padding:40px 20px;
+        border-bottom: 1px solid #dadada;
+        p.days{
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .more{
+      @include margin2(40px,0);
+      img{
+        margin:0 0 0 auto;
+      }
+    }
+  }
+  article.service{
+    @include margin2(70px,0);
+    div.service-box{
+      .text{
+        line-height: 1.8em;
+        strong{
+          font-size: 1.8rem;
+          display: block;
+          margin-bottom: 10px;
+          font-weight: normal;
+        }
+      }
+    }
+    div.flex-block:last-of-type{
+      border-bottom: none;
+    }
+  }
+  article.mk{
+    @include margin2(70px,0);
+    div.mk-box{
+      padding:30px;
+      background: url("../images/facility/mk-back.png") repeat;
+      div.mk-flex{
+        @include flex(space-between,flex-start,justify,start);
+        div.left{
+          @include basis(140px,140px,100%,0,0);
+        }
+        div.right{
+          @include basis(610px,508px,100%,0,0);
+          padding-top: 35px;
+          p.f-text{
+            font-size: 1.8rem;
+            color: #467a99;
+          }
+          p.s-text{
+            font-size: 1.8rem;
+            color: #ae7294;
+          }
+          p.t-text{
+            margin-top: 30px;
+          }
+        }
+      }
+      div.mk-flex:first-of-type{
+        padding-bottom: 20px;
+        border-bottom: #d2d2d2 1px solid;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  article.days{
+    @include margin2(70px,0);
+  }
+  article.nursary-map{
+    @include margin2(70px,0);
+  }
+  article.paper{
+    @include margin2(70px,0);
+    p.text{
+      @include margin2(30px,30px);
+      span{
+        font-weight: bold;
+        display: block;
+      }
+    }
+    div.flex33{
+      @include flex(space-between,stretch,justify,stretch);
+      a{
+        @include basis(32%,32%,100%,0,15px);
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid rgba(0,0,0,.3);
+        padding:12px 8px 10px;
+        border-radius: 5px;
+        line-height: 1.4em;
+      }
+    }
+    div.oasis-kids a{color:#659889;background:#d6eee7;}
+    div.oasis-aj a{color:#a7668a;background:#f6d9ec;}
+    div.oasis-nn a{color:#b08651;background:#ffeaca;}
+    div.oasis-in a{color:#538397;background:#dcecf3;}
+  }
+  article.cm{
+    @include margin2(70px,0);
+    div.flex{
+      @include flex(space-between,center,justify,center);
+      @include padding(0,0,30px);
+      @include margin2(0,30px);
+      border-bottom: 1px solid #dadada;
+      > div{
+        @include basis(50%,50%,100%,0,15px);
+        padding:0 15px;
+        h4{
+          font-size: 1.6rem;
+          margin-bottom: 15px;
+        }
+        p.text{
+          font-size: 1.4rem;
+        }
+      }
+    }
+    div.flex:last-of-type{
+      @include padding(0,0,0);
+      @include margin2(0,0);
+      border-bottom: none;
+    }
+  }
+  article.map{
+    @include margin2(70px,0);
+    div.frame{
+      @include margin2(30px,0);
+    }
+  }
+}

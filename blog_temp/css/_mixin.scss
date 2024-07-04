@@ -1,0 +1,82 @@
+@mixin flex($just:center,$align:center,$f-pack:justify,$f-align:center){
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-pack: $f-pack;
+  -ms-flex-align:$f-align;
+  -ms-flex-line-pack:$f-align;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: $just;
+  -webkit-align-items: $align;
+  -webkit-align-content:$align;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $just;
+  align-items: $align;
+  align-content:$align;
+}
+
+@mixin basis($width:50%,$m-width:50%,$s-width:100%,$tab:30px,$mt:30px) {
+  -ms-flex: 0 0 $width;
+  -webkit-flex-basis:$width;
+  flex-basis:$width;
+  max-width: $width;
+  @media only screen and (max-width:1200px){
+    -ms-flex: 0 0 $m-width;
+    -webkit-flex-basis:$m-width;
+    flex-basis:$m-width;
+    max-width: $m-width;
+    margin-top: $tab;
+  }
+  @media only screen and (max-width: 767px){
+    -ms-flex: 0 0 $s-width;
+    -webkit-flex-basis:$s-width;
+    flex-basis:$s-width;
+    max-width: $s-width;
+    margin-top: $mt;
+  }
+}
+
+@mixin padding($height,$width,$height2,$width2){
+  padding:$height $width;
+  @media only screen and (max-width: 767px){
+    padding:$height2 $width2;
+  }
+}
+
+@mixin padding-tab($top,$side,$bottom,$top2,$side2,$bottom2){
+  padding:$top $side $bottom;
+  @media only screen and (max-width: 1200px){
+    padding:$top2 $side2 $bottom2;
+  }
+}
+
+@mixin margin($top,$side,$bottom){
+  margin: $top $side $bottom;
+  @media only screen and (max-width: 1200px){
+    margin: $top/3*2 $side/3*2 $bottom/3*2;
+  }
+  @media only screen and (max-width: 767px){
+    margin: $top/2 $side/2 $bottom/2;
+  }
+}
+
+@mixin margin2($top,$bottom){
+  margin: $top auto $bottom;
+  @media only screen and (max-width: 1200px){
+    margin: $top/3*2 auto $bottom/3*2;
+  }
+  @media only screen and (max-width: 767px){
+    margin: $top/2 auto $bottom/2;
+  }
+}
+
+@mixin padding($top,$side,$bottom){
+  padding: $top $side $bottom;
+  @media only screen and (max-width: 1200px){
+    padding: $top/4*3 $side/4*3 $bottom/4*3;
+  }
+  @media only screen and (max-width: 767px){
+    padding: $top/3*2 $side/3*2 $bottom/3*2;
+  }
+}
